@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/main_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="钉钉打卡助手"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:text="@string/app_description"
+        android:textColor="@color/main_color"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_app_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="ROOT权限: "
+            android:textColor="@color/text_color_1"/>
+
+        <TextView
+            android:id="@+id/tv_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv41"
+            android:text="未获取"
+            android:textColor="@color/main_color"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="钉钉助手服务状态: "
+            android:textColor="@color/text_color_1"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="未启动"
+            android:textColor="@color/text_color_1"/>
+
+        <Button
+            android:id="@+id/btn_to_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="去启动"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="设置上班打卡时间: "
+            android:textColor="@color/text_color_1"/>
+
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv3"
+            android:editable="false"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="07:30"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="设置下班打卡时间: "
+            android:textColor="@color/text_color_1"/>
+
+        <EditText
+            android:id="@+id/et_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv31"
+            android:editable="false"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="18:30"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/tv41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="自动打卡开关: "
+            android:textColor="@color/text_color_1"/>
+
+        <TextView
+            android:id="@+id/tv_auto_daka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv41"
+            android:text="关"
+            android:textColor="@color/main_color"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_aotu_daka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="开"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="设置发送指令的QQ昵称: "
+            android:textColor="@color/text_color_1"/>
+
+        <EditText
+            android:id="@+id/et_nick_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv4"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:text="stardust"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btn_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="确认"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="设置发送指令的QQ号码: "
+            android:textColor="@color/text_color_1"/>
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv5"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:text="292519413"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btn_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="确认"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试打开钉钉"/>
+
+        <Button
+            android:id="@+id/btn_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试打开QQ"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_app_gray"/>
+
+</LinearLayout>

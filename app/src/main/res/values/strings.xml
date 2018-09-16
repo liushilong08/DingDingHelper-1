@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">钉钉打卡助手</string>
+    <string name="service_description">钉钉打卡助手__王盼</string>
+
+    <string name="app_description">钉钉打卡助手需要使用ROOT权限, 请先获取设备的ROOT权限, 再授予ROOT权限给钉钉打卡助手. 否则功能无法正常使用!!!</string>
+</resources>
