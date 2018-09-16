@@ -1,2 +1,3 @@
 # DingDingHelper
 钉钉打卡助手
+一个可以通过远程发送QQ消息打卡和定时自动打卡的Demo
